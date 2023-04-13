@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Devfinder</title>
+</head>
+
+<body>
+  <div class="body-section">
+    <div class="header">
+      <div class="header-section">
+        <h1>devfinder</h1>
+        <h4>DARK</h4>
+        <div><img src="./assets/icon-moon.svg"></div>
+      </div>
+    </div>
+    <div class="search">
+      <form class="search-section" onsubmit="getWeather(); return false">
+        <div><img src="./assets/icon-search.svg"></div>
+        <input type="text" placeholder="Search GitHub username..." spellcheck="false">
+        <button type="submit"><h3>Search</h3></button>
+      </form>
+    </div>
+    <div class="main">
+      <div class="main-section">
+        <div class="main-section-left">
+          <div><img src="./assets/profile.png"></div>
+        </div>
+        <div class="main-section-right">
+          <div class="joined">
+            <h1>The Octocat</h1>
+            <p>Joined 25 Jan 2011</p>
+          </div>
+          <div class="username">
+            <h3>@octocat</h3>
+          </div>
+          <div class="about">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+          </div>
+          <div class="stats">
+            <div class="repos">
+              <h4>Repos</h4>
+              <h2>8</h2>
+            </div>
+            <div class="followers">
+              <h4>Followers</h4>
+              <h2>3938</h2>
+            </div>
+            <div class="following">
+              <h4>Following</h4>
+              <h2>9</h2>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="location">
+              <div><img src="./assets/icon-location.svg"></div>
+              <p>San Francisco</p>
+            </div>
+            <div class="twitter">
+              <div><img src="./assets/icon-twitter.svg"></div>
+              <p>Not Available</p>
+            </div>
+            <div class="website">
+              <div><img src="./assets/icon-website.svg"></div>
+              <p>https://github.blog</p>
+            </div>
+            <div class="company">
+              <div><img src="./assets/icon-company.svg"></div>
+              <p>@github</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+:root{
+    --clr-blue-lm--: #0079FF;
+    --clr-dark-blue-lm--: #4B6A9B;
+    --clr-black-lm--: #2B3442;
+    --clr-grey-lm--: #697C9A;
+    --clr-white-lm--: #FEFEFE;
+    --clr-offwhite-lm--: #F6F8FF;
+    --clr-blue-dm--: #0079FF;
+    --clr-dark-blue-dm--: #1E2A47;
+    --clr-black-dm--: #141D2F;
+    --clr-white-dm--: #FFFFFF;
+    --font-spacemono--: 'Space Mono', monospace;
+    --head-h1-size--: 1.625rem;
+    --head-h1-line-height--: 2.375rem;
+    --head-h1-weight--: 700;
+    --head-h2-size--: 1.375rem;
+    --head-h2-line-height--: 2.0625rem;
+    --head-h2-weight--: 700;
+    --head-h3-size--: 1rem;
+    --head-h3-line-height--: 1.5rem;
+    --head-h3-weight--: 400;
+    --head-h4-size--: 0.8125rem;
+    --head-h4-line-height--: 1.25rem;
+    --head-h4-weight--: 400;
+    --body-size--: 0.9375rem;
+    --body-line-height--: 1.5625rem;
+    --body-weight--: 400;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-spacemono--);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    background-color: var(--clr-offwhite-lm--);
+}
+.main, .search{
+    background-color: var(--clr-white-lm--);
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.body-section{
+    max-width: 730px;
+}
+h1{
+    font-size: var(--head-h1-size--);
+    font-weight: var(--head-h1-weight--);
+    line-height: var(--head-h1-line-height--);
+    color: var(--clr-black-lm--);
+}
+h2{
+    font-size: var(--head-h2-size--);
+    font-weight: var(--head-h2-weight--);
+    line-height: var(--head-h2-line-height--);
+    color: var(--clr-black-lm--);
+}
+h3{
+    font-size: var(--head-h3-size--);
+    font-weight: var(--head-h3-weight--);
+    line-height: var(--head-h3-line-height--);
+    color: var(--clr-blue-lm--);
+}
+h4{
+    font-size: var(--head-h4-size--);
+    font-weight: var(--head-h4-weight--);
+    line-height: var(--head-h4-line-height--);
+    color: var(--clr-grey-lm--);
+}
+p{
+    font-size: var(--body-size--);
+    font-weight: var(--body-weight--);
+    line-height: var(--body-line-height--);
+    color: var(--clr-dark-blue-lm--);
+}
+input{
+    font-size: 1.125rem;
+    line-height: var(--body-line-height--);
+}
+header-section img{
+    width: 20px;
+}
+search-section img{
+    width: 24px;
+}
+main-section-left img{
+    width: 117px;
+}
+.location img{
+    width: 13.75px;
+}
+.twitter img, .website img, .company img{
+    width: 20px;
+}
+button{
+    outline: none;
+    border: none;
+    background-color: var(--clr-blue-lm--);
+}
+button h3{
+    color: var(--clr-white-dm--);
+    font-weight: 700;
+}
+.header-section h4{
+    font-weight: 700;
+}
