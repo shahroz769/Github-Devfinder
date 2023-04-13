@@ -27,7 +27,7 @@
     --body-weight--: 400;
 }
 
-.dark{
+.dark {
     --clr-offwhite-lm--: #141D2F;
     --clr-dark-blue-lm--: #ffffff;
     --clr-white-lm--: #1E2A47;
@@ -57,7 +57,7 @@ body {
     background-color: var(--clr-white-lm--);
 }
 
-.main{
+.main {
     border-radius: 15px;
 }
 
@@ -172,7 +172,7 @@ button {
     cursor: pointer;
 }
 
-button:active{
+button:active {
     background-color: #60ABFF;
 }
 
@@ -192,7 +192,7 @@ body {
 
 .body-section {
     max-width: 730px;
-    width: 75%;
+    width: 90%;
 }
 
 .header-section {
@@ -208,7 +208,7 @@ body {
     gap: 37px;
 }
 
-.joined{
+.joined {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -216,7 +216,7 @@ body {
     white-space: nowrap;
 }
 
-.stats{
+.stats {
     display: flex;
     background-color: var(--clr-offwhite-lm--);
     border-radius: 10px;
@@ -224,30 +224,113 @@ body {
     padding: 15px 32px 17px 32px;
 }
 
-.repos, .followers, .following{
+.repos,
+.followers,
+.following {
     flex: 1;
 }
 
-.username{
+.username {
     margin-top: 2px;
     margin-bottom: 20px;
 }
 
-.about{
+.about {
     margin-top: 20px;
     margin-bottom: 32px;
 }
 
-.contact{
+.contact {
     margin-top: 37px;
     display: flex;
     flex-wrap: wrap;
     white-space: nowrap;
-    row-gap: 19px;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
-.location, .twitter, .website, .company{
+.contact>div {
     display: flex;
     gap: 16px;
     flex: 1;
+}
+
+@media only screen and (min-width: 780px) {
+    .tab-section-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 779px) {
+    .main-section-left {
+        display: none;
+    }
+
+    .foo {
+        display: flex;
+        gap: 42px;
+    }
+
+    .joined {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact {
+        width: 92%;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .foo {
+        align-items: center;
+        gap: 18px;
+    }
+
+    .tab-section-img img {
+        width: 70px;
+    }
+
+    .main-section {
+        margin: 0 20px;
+        padding: 44px 0 28px 0;
+    }
+
+    .stats {
+        padding: 15px 15px 17px 15px;
+        gap: 5px;
+    }
+
+    .search-section {
+        height: 60px;
+    }
+
+    .search input {
+        height: 50px;
+    }
+
+    .search {
+        height: 60px;
+    }
+
+    .search-section button {
+        height: 40px;
+        width: 90px;
+        padding: 0px 15px 0px 15px;
+    }
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 645px){
+    .contact{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 335px) {
+    .foo {
+        flex-direction: column;
+    }
 }
