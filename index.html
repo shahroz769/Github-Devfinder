@@ -18,9 +18,9 @@
         <div class="title-left">
           <h1>devfinder</h1>
         </div>
-        <div class="title-right">
-          <h4>DARK</h4>
-          <div><img src="./assets/icon-moon.svg"></div>
+        <div onclick="theme()" class="title-right">
+          <h4 id="themeName">DARK</h4>
+          <div><img id="themeIcon" src="./assets/icon-moon.svg"></div>
         </div>
       </div>
     </div>
@@ -65,19 +65,19 @@
           </div>
           <div class="contact">
             <div class="location">
-              <div><img src="./assets/icon-location.svg"></div>
+              <div><img id="locationIcon" src="./assets/icon-location.svg"></div>
               <p>San Francisco</p>
             </div>
             <div class="twitter">
-              <div><img src="./assets/icon-twitter.svg"></div>
+              <div><img id="twitterIcon" src="./assets/icon-twitter.svg"></div>
               <p>Not Available</p>
             </div>
             <div class="website">
-              <div><img src="./assets/icon-website.svg"></div>
+              <div><img id="websiteIcon" src="./assets/icon-website.svg"></div>
               <p>https://github.blog</p>
             </div>
             <div class="company">
-              <div><img src="./assets/icon-company.svg"></div>
+              <div><img id="companyIcon" src="./assets/icon-company.svg"></div>
               <p>@github</p>
             </div>
           </div>
@@ -86,5 +86,6 @@
     </div>
   </div>
 </body>
+<script src="app.js"></script>
 
 </html>
