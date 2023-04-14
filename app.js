@@ -23,3 +23,31 @@ function theme() {
         companyIcon.src = "./assets/icon-company.svg"
     }
 }
+window.getDevDetails = function () {
+
+    let userName = document.querySelector("#username").value;
+
+    axios.get(`https://api.github.com/users/${userName}`)
+        .then(function (response) {
+            console.log(response.data);
+            document.getElementById("git-name").innerHTML = response.data.name
+            document.getElementById("git-username").innerHTML = "@" + response.data.login
+            document.getElementById("git-bio").innerHTML = response.data.bio
+            document.getElementById("git-repo").innerHTML = response.data.public_repos
+            document.getElementById("git-followers").innerHTML = response.data.followers
+            document.getElementById("git-following").innerHTML = response.data.following
+            document.getElementById("git-location").innerHTML = response.data.location
+            document.getElementById("git-twitter").innerHTML = response.data.twitter_username
+            document.getElementById("git-url").innerHTML = response.data.html_url
+            document.getElementById("git-company").innerHTML = response.data.company
+            document.getElementById("git-profile-image1").src = response.data.avatar_url
+            document.getElementById("git-profile-image2").src = response.data.avatar_url
+            document.getElementById("git-date").innerHTML = "Joined " + response.data.created_at
+        })
+        .catch(function (error) {
+            console.log(error.data);
+        })
+
+
+
+}

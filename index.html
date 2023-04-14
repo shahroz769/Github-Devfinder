@@ -27,7 +27,7 @@
     <div class="search">
       <form class="search-section" onsubmit="getDevDetails(); return false">
         <div class="search-img"><img src="./assets/icon-search.svg"></div>
-        <input type="text" placeholder="Search GitHub username..." spellcheck="false">
+        <input type="text" id="username" placeholder="Search GitHub username..." spellcheck="false">
         <button type="submit">
           <h3>Search</h3>
         </button>
@@ -36,56 +36,56 @@
     <div class="main">
       <div class="main-section">
         <div class="main-section-left">
-          <div><img src="./assets/profile.png"></div>
+          <div><img id="git-profile-image1" src="./assets/profile.png"></div>
         </div>
         <div class="main-section-right">
           <div class="foo">
             <div class="tab-section-img">
-              <img src="./assets/profile.png">
+              <img id="git-profile-image2" src="./assets/profile.png">
             </div>
             <div>
               <div class="joined">
-                <h1>The Octocat</h1>
-                <p>Joined 25 Jan 2011</p>
+                <h1 id="git-name">The Octocat</h1>
+                <p id="git-date">Joined 25 Jan 2011</p>
               </div>
               <div class="username">
-                <h3>@octocat</h3>
+                <h3 id="git-username">@octocat</h3>
               </div>
             </div>
           </div>
           <div class="about">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+            <p id="git-bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
           </div>
           <div class="stats">
             <div class="repos">
               <h4>Repos</h4>
-              <h2>8</h2>
+              <h2 id="git-repo">8</h2>
             </div>
             <div class="followers">
               <h4>Followers</h4>
-              <h2>3938</h2>
+              <h2 id="git-followers">3938</h2>
             </div>
             <div class="following">
               <h4>Following</h4>
-              <h2>9</h2>
+              <h2 id="git-following">9</h2>
             </div>
           </div>
           <div class="contact">
             <div class="location">
               <div><img id="locationIcon" src="./assets/icon-location.svg"></div>
-              <p>San Francisco</p>
+              <p id="git-location">San Francisco</p>
             </div>
             <div class="twitter">
               <div><img id="twitterIcon" src="./assets/icon-twitter.svg"></div>
-              <p>Not Available</p>
+              <p id="git-twitter">Not Available</p>
             </div>
             <div class="website">
               <div><img id="websiteIcon" src="./assets/icon-website.svg"></div>
-              <p>https://github.blog</p>
+              <p id="git-url">https://github.blog</p>
             </div>
             <div class="company">
               <div><img id="companyIcon" src="./assets/icon-company.svg"></div>
-              <p>@github</p>
+              <p id="git-company">@github</p>
             </div>
           </div>
         </div>
@@ -94,6 +94,6 @@
   </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="app.js"></script>
-
 </html>

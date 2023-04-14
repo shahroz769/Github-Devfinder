@@ -158,8 +158,9 @@ header-section img {
     margin: 23px 23.94px 22px 32px;
 }
 
-main-section-left img {
+.main-section-left img {
     width: 117px;
+    border-radius: 50%;
 }
 
 .location img {
@@ -183,6 +184,7 @@ button {
     border-radius: 10px;
     padding: 12.5px 23px 13.5px 24px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 button:active {
@@ -278,7 +280,10 @@ body {
     .main-section-left {
         display: none;
     }
-
+    .tab-section-img img {
+        width: 117px;
+        border-radius: 50%;
+    }
     .foo {
         display: flex;
         gap: 42px;
