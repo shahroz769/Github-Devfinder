@@ -176,6 +176,10 @@ header-section img {
     border-radius: 50%;
 }
 
+#git-location{
+    font-size: 16px;
+}
+
 .location img {
     width: 13.75px;
     margin-right: 6.25px;
