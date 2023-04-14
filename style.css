@@ -134,10 +134,31 @@ a {
     line-height: var(--body-line-height--);
 }
 
+.pandaError{
+    display: none;
+    width: 70%;
+    margin: auto auto;
+}
+
+.error{
+    font-weight: 700;
+    font-size: var(--body-size--);
+    line-height: var(--body-line-height--);
+    color: #F74646;
+    white-space: nowrap;
+    display: none;
+}
+
 .search {
     border-radius: 20px;
     margin-top: 36px;
     margin-bottom: 24px;
+}
+
+#illustration{
+    color: var(--clr-blue-lm--);
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
 span {
@@ -174,7 +195,7 @@ header-section img {
     width: 20px;
 }
 
-.website a {
+.website a, .twitter a {
     color: var(--clr-dark-blue-lm--);
 }
 
