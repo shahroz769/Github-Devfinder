@@ -27,7 +27,7 @@
     <div class="search">
       <form class="search-section" onsubmit="getDevDetails(); return false">
         <div class="search-img"><img src="./assets/icon-search.svg"></div>
-        <input type="text" id="username" placeholder="Search GitHub username..." spellcheck="false">
+        <input type="text" id="username" placeholder="Search GitHub username..." autocomplete="off" spellcheck="false">
         <button type="submit">
           <h3>Search</h3>
         </button>
@@ -81,7 +81,7 @@
             </div>
             <div class="website">
               <div><img id="websiteIcon" src="./assets/icon-website.svg"></div>
-              <p id="git-url">https://github.blog</p>
+              <a href="#" target="_blank" rel="noopener" id="git-url">https://github.blog</a>
             </div>
             <div class="company">
               <div><img id="companyIcon" src="./assets/icon-company.svg"></div>

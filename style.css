@@ -96,7 +96,7 @@ p {
     color: var(--clr-dark-blue-lm--);
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--clr-black-lm--);
     -webkit-tap-highlight-color: transparent;
@@ -140,7 +140,7 @@ a{
     margin-bottom: 24px;
 }
 
-span{
+span {
     color: var(--clr-blue-lm--);
 }
 
@@ -172,6 +172,10 @@ header-section img {
 .website img,
 .company img {
     width: 20px;
+}
+
+.website a {
+    color: var(--clr-dark-blue-lm--);
 }
 
 button {
@@ -257,10 +261,10 @@ body {
 
 .contact {
     margin-top: 37px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     white-space: nowrap;
-    column-gap: 20px;
+    column-gap: 5px;
     row-gap: 20px;
 }
 
@@ -280,10 +284,16 @@ body {
     .main-section-left {
         display: none;
     }
+
+    .contact {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .tab-section-img img {
         width: 117px;
         border-radius: 50%;
     }
+
     .foo {
         display: flex;
         gap: 42px;
@@ -323,8 +333,13 @@ body {
         height: 60px;
     }
 
+    .search input::placeholder {
+        font-size: 16px;
+    }
+
     .search input {
         height: 50px;
+        font-size: 16px;
     }
 
     .search {
