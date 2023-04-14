@@ -59,6 +59,7 @@ body {
 
 .main {
     border-radius: 15px;
+    margin-bottom: 15px;
 }
 
 h1 {
@@ -138,15 +139,6 @@ a {
     display: none;
     width: 70%;
     margin: auto auto;
-}
-
-.error{
-    font-weight: 700;
-    font-size: var(--body-size--);
-    line-height: var(--body-line-height--);
-    color: #F74646;
-    white-space: nowrap;
-    display: none;
 }
 
 .search {

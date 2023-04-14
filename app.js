@@ -27,7 +27,6 @@ function theme() {
     }
 }
 window.getDevDetails = function () {
-    document.querySelector(".error").style.display = "none"
     document.querySelector(".main-section-left").style.display = "block"
     document.querySelector(".main-section-right").style.display = "block"
     document.querySelector(".pandaError").style.display = "none"
@@ -107,7 +106,6 @@ window.getDevDetails = function () {
         })
         .catch(function (error) {
             console.log(error.data);
-            document.querySelector(".error").style.display = "block"
             document.querySelector(".main-section-left").style.display = "none"
             document.querySelector(".main-section-right").style.display = "none"
             document.querySelector(".pandaError").style.display = "block"
