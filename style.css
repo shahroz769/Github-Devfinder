@@ -303,7 +303,7 @@ body {
 
 @media only screen and (max-width: 779px) {
     .main-section-left {
-        display: none;
+        display: none !important;
     }
 
     .contact {

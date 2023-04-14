@@ -47,7 +47,7 @@ window.getDevDetails = function () {
     let gitProfileImage2 = document.getElementById("git-profile-image2")
     let gitDate = document.getElementById("git-date")
     axios.get(`https://api.github.com/users/${userName}`)
-        .then(function (response) {
+    .then(function (response) {
             console.log(response.data);
             // ----------------------------------MONTH---------------------MONTH--------------------MONTH----------------------------------------------------
             let date = response.data.created_at.replaceAll("-", " ").slice(0, 10)
@@ -57,7 +57,6 @@ window.getDevDetails = function () {
             }
             let monthStr = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",]
             let month = monthStr[monthNum]
-            console.log(monthNum, month)
             let theDate = date.slice(8, 10) + " " + month + " " + date.slice(0, 4)
             // ----------------------------------MONTH---------------------MONTH--------------------MONTH----------------------------------------------------
             // ----------------------------------------URL---------------------URL--------------------URL----------------------------------------------------
