@@ -135,7 +135,7 @@ a {
     line-height: var(--body-line-height--);
 }
 
-.pandaError{
+.pandaError {
     display: none;
     width: 70%;
     margin: auto auto;
@@ -147,7 +147,7 @@ a {
     margin-bottom: 24px;
 }
 
-#illustration{
+#illustration {
     color: var(--clr-blue-lm--);
     padding-left: 20px;
     padding-bottom: 10px;
@@ -176,7 +176,7 @@ header-section img {
     border-radius: 50%;
 }
 
-#git-location{
+#git-location {
     font-size: 16px;
 }
 
@@ -191,7 +191,8 @@ header-section img {
     width: 20px;
 }
 
-.website a, .twitter a {
+.website a,
+.twitter a {
     color: var(--clr-dark-blue-lm--);
 }
 
@@ -327,6 +328,8 @@ body {
 }
 
 @media only screen and (max-width: 525px) {
+
+
     .foo {
         align-items: center;
         gap: 18px;
@@ -384,8 +387,16 @@ body {
 }
 
 @media only screen and (max-width: 645px) {
+    .joined h1 {
+        font-size: 1.2rem;
+    }
     .contact {
         flex-direction: column;
+    }
+}
+@media only screen and (max-width: 365px) {
+    .joined h1 {
+        font-size: 1rem;
     }
 }
 
