@@ -61,25 +61,13 @@ window.getDevDetails = function () {
             // ----------------------------------------URL---------------------URL--------------------URL----------------------------------------------------
             let url = response.data.html_url.slice(8)
             // ----------------------------------------URL---------------------URL--------------------URL----------------------------------------------------
-            // ----------------------------CAPITALIZE---------------------CAPITALIZE--------------------CAPITALIZE----------------------------------------------
-            let location = []
-            if (response.data.location !== null && response.data.location !== undefined) {
-                let tempLoc = response.data.location
-                let locationArr = tempLoc.split(" ")
-                for (i = 0; i < locationArr.length; i++) {
-                    let capitalize = locationArr[i][0].toUpperCase() + locationArr[i].slice(1).toLowerCase()
-                    location.push(capitalize)
-                }
-                location = location.join(" ")
-            }
-            // ----------------------------CAPITALIZE---------------------CAPITALIZE--------------------CAPITALIZE----------------------------------------------
             gitName.innerHTML = response.data.name
             gitUsername.innerHTML = "@" + response.data.login
             gitBio.innerHTML = response.data.bio
             gitRepo.innerHTML = response.data.public_repos
             gitFollowers.innerHTML = response.data.followers
             gitFollowing.innerHTML = response.data.following
-            gitLocation.innerHTML = location
+            gitLocation.innerHTML = response.data.location
             gitTwitter.href = "https://twitter.com/" + response.data.twitter_username
             gitTwitter.innerHTML = "@" + response.data.twitter_username
             gitTwitter.target = "_blank"
