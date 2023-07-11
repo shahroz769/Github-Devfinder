@@ -245,6 +245,10 @@ body {
     gap: 37px;
 }
 
+.main-section-right{
+    width: 100%;
+}
+
 .joined {
     display: flex;
     justify-content: space-between;
